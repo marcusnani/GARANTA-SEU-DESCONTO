@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Validação de Desconto</title>
+    <script>
+        function validarSenha() {
+            var senha = document.getElementById("senha").value;
+            if (senha === "speakup1958") {
+                alert("Desconto validado com sucesso!");
+                // Aqui você pode adicionar qualquer ação desejada após a validação.
+            } else {
+                window.location.href = "redirecionamento.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Valide seu Desconto</h1>
+    <input type="password" id="senha" placeholder="Insira a senha">
+    <button onclick="validarSenha()">Validar</button>
+</body>
+</html>
